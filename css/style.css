@@ -1,0 +1,623 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+
+.clearfix:after {
+	display: block;
+	content: "";
+	overflow: hidden;
+	clear: both;
+}
+
+.Header {
+	width: 100%;
+	min-width:1180px;
+	background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+	border-bottom: 1px solid #ccc;
+	
+
+}
+/* 整体调节最小宽为1180px */
+
+.Header .Header-Nav {
+	width: 1180px;
+	margin: 0 auto;
+}
+
+.Header-Nav li {
+	list-style: none;
+}
+
+.Header-Nav>ul>li {
+	display: inline-block;
+	position: relative;
+}
+
+.Header-Nav>ul>li>a {
+	display: block;
+	text-decoration: none;
+	color: #111;
+	text-align: center;
+	line-height: 40px;
+	width: 150px;
+	font-size: 16px;
+	font-weight: bold;
+
+
+}
+
+.Header-Nav ul li a:hover {
+	background: #ACE0F9;
+	color: #fff;
+}
+
+.Header-Nav>ul>li>ul>li>a {
+	width: 9.375rem;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+}
+
+.Header-Nav>ul>li>ul {
+	display: none;
+	position: absolute;
+	background-image: linear-gradient(to bottom, black 0%, #ace0f9 100%);
+	z-index: 9;
+}
+
+.Header-Nav>ul>li:hover>ul {
+	display: block;
+}
+
+.Header-Nav>ul>li:nth-child(5) {
+	margin-left: 4.6875rem;
+	border-radius: 10px;
+	border: 1px solid #ACE0F9;
+}
+
+.Header-Nav>ul>li:nth-child(5) :hover {
+	background: #ACE0F9;
+	border-radius: 10px;
+}
+
+.Header-Nav>ul>li:nth-child(6) {
+	border-radius: 10px;
+	border: 1px solid #ACE0F9;
+}
+
+.Header-Nav>ul>li:nth-child(6) :hover {
+	background: #ACE0F9;
+	border-radius: 10px;
+}
+
+.Header-Nav>ul>li>span:after {
+	width: 8px;
+	height: 8px;
+	content: "";
+	display: block;
+	border: 3px solid;
+	border-right-width: 0;
+	border-top-width: 0;
+	border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #5F9EA0 #fff1eb;
+	position: absolute;
+	top: 18px;
+	right: 15px;
+	transform: rotate(45deg);
+	transition-duration: 0.7s;
+}
+
+.Header-Nav>ul>li:hover span:after {
+	transition-duration: 0.5s;
+	transform: rotate(-45deg);
+}
+
+#Main {
+	width: 100%;
+	background: url(../img/Ornament.png)repeat-x;
+	min-width: 1180px;
+}
+
+#Main .Main-Content {
+	width: 1180px;
+	height: 600px;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.Main-Content h1 {
+	font-size: 58px;
+	padding-top: 50px;
+}
+
+.Main-Content h1:hover {
+
+	font-size: 58px;
+	padding-top: 50px;
+	animation-name: h1;
+	animation-duration: 5s;
+	animation-iteration-count:1;
+
+	cursor: pointer;
+
+}
+
+/* 此处还没加完 */
+@keyframes h1 {
+	0% {
+		color: red;
+	}
+
+	20% {
+		color: green;
+	}
+
+	40% {
+		color: sandybrown;
+	}
+
+	60% {
+		color: orange;
+	}
+
+	80% {
+		color: cadetblue;
+	}
+
+	100% {
+		color: darkmagenta;
+	}
+}
+
+.Main-Content .Main-Content-p1 {
+	font-size: 26px;
+	line-height: 100px;
+}
+
+.Main-Content h2 {
+	width: 280px;
+	border: 2px solid #ACE0F9;
+	text-align: center;
+	line-height: 40px;
+	position: relative;
+	cursor: pointer;
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+
+.Main-Content h2:hover {
+	background: #5F9EA0;
+	color: #FFF;
+}
+
+.Main-Content h2 span {
+	display: none;
+
+}
+
+.Main-Content h2:hover span {
+	display: block;
+	width: 700px;
+	height:120px;
+	position: absolute;
+	color: #FFFFFF;
+	top: -40px;
+	right: -740px;
+	border: 1px solid #ACE0F9;
+	padding: 0 15px;
+	border-radius: 50px;
+	background: #5F9EA0;
+	animation-name: span;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	-webkit-animation-duration: 5s;
+	-o-animation-duration: 5s;
+	-ms-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+}
+
+@keyframes span {
+	0% {
+		background: teal;
+	}
+
+	20% {
+		background: deepskyblue;
+	}
+
+	40% {
+		background: #8B008B;
+	}
+
+	60% {
+		background: darkblue;
+	}
+
+	80% {
+		background: orange;
+	}
+
+	100% {
+		background: green;
+	}
+}
+
+.Main-Content .bot:after {
+	width: 0;
+	height: 0;
+	content: "";
+	display: block;
+	border: 0.5rem solid;
+	border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ACE0F9;
+	position: absolute;
+	top: 16px;
+	right: 0px;
+	transform: rotate(90deg);
+	transition-duration: 0.8s;
+}
+
+.Main-Content h2:hover .bot:after {
+	transform: rotate(0deg);
+	transition-duration: 1s;
+}
+
+.Main-Content .Main-Content-Img {
+	background: url(../img/8888.jpg)no-repeat;
+	width: 1080px;
+	height:600px;
+	border-radius: 300px;
+	border: 3px solid #CCCCCC;
+	position: relative;
+	margin: 0 auto;
+}
+
+.Main-Content .Main-Content-Hdp {
+	position: relative;
+}
+
+.Main-Content-Hdp>ul>li {
+	position: absolute;
+	text-align: center;
+	right:100px;
+	top: -300px;
+	list-style: none;
+}
+
+.Main-Content-Hdp>ul>li>a {
+	display: block;
+	text-decoration: none;
+	color: #111111;
+	width: 240px;
+	text-align: center;
+	line-height: 40px;
+	border: 2px solid #ACE0F9;
+	border-radius: 10px;
+}
+
+.Main-Content-Hdp>ul>li>ul {
+	display: none;
+}
+
+.Main-Content-Hdp>ul>li:hover>ul {
+	display: block;
+}
+
+.Main-Content-Hdp>ul>li>ul>li p {
+	width: 23rem;
+	margin: 0 auto;
+	line-height: 2;
+}
+
+.Main-Content-Hdp>ul>li:hover>ul>li {
+	width: 25rem;
+	height: 14.8rem;
+	border: 1px solid;
+	position: absolute;
+	left: -4.375rem;
+	list-style: none;
+	border-radius: 30px;
+	border-color: #00BFFF #F4A460 #008000 red;
+}
+
+.Menu {
+	width: 100%;
+	min-width: 1180px;
+	margin-top:330px;
+	border-bottom: 0.0625rem solid #CCCCCC;
+}
+
+.Menu .Menu-Content {
+	width: 1180px;
+	height: 420px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 1.25rem;
+	
+}
+
+.Menu .Menu-Content p {
+	width: 320px;
+	height: 100px;
+	border: 1px solid #00BFFF;
+	margin: 15px 110px;
+	line-height: 100px;
+	padding: 0 20px;
+	border-radius: 20px;
+	transition-duration: 1s;
+	display: inline-block;
+	text-align: center;
+
+}
+
+.Menu .Menu-Content p a {
+	color: black;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.Menu .Menu-Content p:hover a {
+	color: orchid;
+}
+
+.Menu .Menu-Content p:hover {
+	transform: scale(0.9, 0.9);
+	transition-duration: 0.5s;
+	background: #ACE0F9;
+
+}
+
+.Menu-Content .Menu-Content-aa:after {
+	display: inline-block;
+	border: 1px solid #00BFFF;
+	content: "";
+	height: 20px;
+	animation-name: span-aa;
+	animation-duration: 5s;
+	-webkit-animation-duration: 5s;
+	-o-animation-duration: 5s;
+	-ms-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+	animation-iteration-count: infinite;
+	position: relative;
+}
+
+@keyframes span-aa {
+	0% {
+		border-color: red;
+	}
+
+	25% {
+		border-color: peru;
+	}
+
+	50% {
+		border-color: #00BFFF;
+	}
+
+	75% {
+		border-color: #8B008B;
+	}
+
+	100% {
+		border-color: #DA70D6;
+	}
+}
+
+.Search {
+	width: 100%;
+	min-width: 1180px;
+	border-bottom:0.0625rem solid blue ;
+	margin-bottom: 2.5rem;
+}
+
+.Search .Search-Content {
+	width: 1180px;
+	margin: 0 auto;
+	
+}
+
+.Search-Content .Search-Content-left {
+	width: 240px;
+	height: 20.625rem;
+	background: #00BFFF;
+	text-align: center;
+	position: relative;
+	float:left;
+	margin-right:15px;
+	margin-left: 50px;
+
+}
+.Search-Content .Search-Content-left  h3{color: #FFFFFF;}
+.Search-Content-left .Search-Content-left-a {
+	width: 240px;
+	transition-duration: 1.5s;
+	background:#00BFFF;
+	margin-top: 161px;
+	transition-duration: 3s;
+	height: 9.0625rem;
+}
+
+.Search-Content-left .Search-Content-left-a a {
+	display: block;
+	text-align: center;
+	color: #00BFFF;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 20px 0;
+}
+
+.Search-Content-left .Search-Content-left-a a:hover {
+	color:#FFFFFF;
+	font-size: 16px;
+	padding: 20px 0;
+
+}
+
+.Search-Content-left:hover .Search-Content-left-a {
+	display: block;
+	transform: translateY(-145px);
+	transition-duration: 3s;
+	background:#ACE0F9;
+	height: 165px;
+	position: absolute;
+	border: 1px solid #00BFFF;
+	border-radius: 0.9375rem;
+	width: 232px;
+	
+}
+
+.Search-Content .Search-Content-center {
+	width: 1100px;
+	height: 330px;
+	float: left;
+	padding-left: 50px;
+}
+
+.Search-Content .Search-Content-center h1 {
+	text-align: center;
+	margin: 15px 0;
+	color: #29bdd9;
+	
+}
+
+.Search-Content .Search-Content-center span {
+	display: inline-block;
+	width: 124px;
+	line-height: 40px;
+	background: #00BFFF;
+	text-align: center;
+	margin: 20px 45px 40px 45px;
+	position: relative;
+}
+
+.Search-Content .Search-Content-center span a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.Search-Content .Search-Content-right {
+	float:left;margin:0 15px;
+}
+
+.Search-Content .Search-Content-center span .A-yuan:after {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	border: 1px solid #CCCCCC;
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: -64px;
+	background: #00BFFF;
+
+}
+
+.Search-Content .Search-Content-center span:hover .A-yuan:after {
+	animation-name: yuan;
+	animation-duration: 4s;
+	-webkit-animation-duration: 4s;
+	-o-animation-duration: 4s;
+	-ms-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes yuan {
+	0% {
+		background: #008080;
+	}
+
+	25% {
+		background: #111111;
+	}
+
+	50% {
+		background: #8B008B;
+	}
+
+	75% {
+		background: slateblue;
+	}
+
+	100% {
+		background: red;
+	}
+}
+
+.Search-Content .Search-Content-center span .A-yuan .B-xian:after {
+	display: block;
+	content:"";
+	width: 90px;
+	border: 5px solid #00BFFF;
+	position: absolute;
+	right: -100px;
+	top: 20px;
+	background: #00BFFF;
+
+}
+
+.Search-Content .Search-Content-center span:hover .A-yuan .B-xian:after {
+	animation-name: color;
+	animation-duration: 4s;
+	-webkit-animation-duration: 4s;
+	-o-animation-duration: 4s;
+	-ms-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes color {
+	0% {
+		border-color: #008080;
+		background: #008080 ;
+	}
+
+	25% {
+		border-color: #111111;
+		background: #111111;
+	}
+
+	50% {
+		border-color: #8B008B;
+		background: #8B008B;
+	}
+
+	75% {
+		border-color: slateblue;
+		background: slateblue;
+	}
+
+	100% {
+		border-color: red;
+		background: red;
+	}
+}
+
+.Search-Content .Search-Content-center .C-shu:after {
+	content: "";
+	display: block;
+	height: 20px;
+	border: 5px solid #00BFFF;
+	width: 0;
+	position: absolute;
+	bottom: -30px;
+	left: 50px;
+	background: #00BFFF;
+}
+
+.Search-Content .Search-Content-center .D-shu:after {
+	position: absolute;
+	top: -30px;
+}
+/* 此处比较复杂提前解释一下
+1 A-yuan设置的伪类是个圆形图标是在横线中间  
+2 B-xian 设置的伪类是一条直线  这些定位都是相对于span的进行定位
+3就是两个C D-shu 这两个是两个控制按钮为了防止点击都亮设置上半部分的高度
+点击就变色上面的高度下半部分的高度就亮下半部分的 
+这个定位比较困难计算高度以及定位需要的高度逻辑比较复杂 */
+
